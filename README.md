@@ -39,6 +39,33 @@ The CI workflow is already defined in the `.github/workflows` directory. Pushing
 - Set up the environment.
 - Install dependencies.
 - Run tests for the "Student Registry" application on two different Node.js versions.
+
+## Jenkins Setup
+
+If using Jenkins for CI, follow these steps to integrate and run tests automatically:
+
+1. **Install Jenkins**: Download and install Jenkins from the [official Jenkins site](https://www.jenkins.io/).
+   
+2. **Create a New Job**:
+   - Set up a new Pipeline or Freestyle project.
+   - Connect to the repository by setting up Git SCM in the job configuration.
+   
+3. **Configure Build Steps**:
+   - Add build steps to install dependencies and run tests.
+   - Example build script:
+     ```sh
+     npm install
+     npm test
+     ```
+
+4. **Schedule Builds**:
+   - Use the "Build Triggers" section to set up automatic builds on repository changes or specific schedules.
+   
+5. **Post-Build Actions**:
+   - Configure actions like reporting or notifications to integrate with GitHub or other tools.
+
+Using Jenkins along with GitHub Actions allows more flexibility in customizing the CI pipeline, especially for larger or distributed testing scenarios.
+
 ## Additional Notes:
 
 - This project serves as a demonstration of CI/CD concepts using a pre-existing application.
