@@ -11,14 +11,14 @@ This repository contains a Node.js app. The project focuses on building a CI wor
 
 ## Project Goals:
 
-- Implement a CI workflow in GitHub Actions.
+- Implement a CI workflow in GitHub Actions and Jenkins.
 - Configure the workflow to run tests on the "Student Registry" application.
 - Test the application using multiple Node.js versions.
 
 ## Prerequisites:
 
 - Basic understanding of Node.js and testing frameworks.
-- Familiarity with GitHub Actions.
+- Familiarity with GitHub Actions and Jenkins.
   
 ## Setup:
 
