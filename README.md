@@ -3,6 +3,7 @@
 
 [![JavaScript](https://img.shields.io/badge/Made%20with-JavaScript-F7DF1E.svg)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![GitHub Actions](https://img.shields.io/badge/CI-GitHub%20Actions-2088FF.svg)](https://github.com/features/actions)
+[![Jenkins](https://img.shields.io/badge/CI-Jenkins-D24939.svg)](https://www.jenkins.io/)
 
 ---
 ## Overview
