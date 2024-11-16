@@ -12,22 +12,22 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                z 'npm install'
+                 git branch: 'main', url: 'https://github.com/StefRuseva88/jenkins-job'
             }
         }
 
-        stage('Build') {
+        stage('Install dependencies') {
             steps {
-                sh 'npm install'
+                bat 'npm install'
             }
         }
 
         stage('Start and Test') {
             steps {
                 script {
-                    sh 'npm start &'
-                    sh 'wait-on http://localhost:8090'
-                    sh 'npm test'
+                    bat 'npm start &'
+                    bat 'wait-on http://localhost:8090'
+                    bat 'npm test'
                 }
             }
         }
