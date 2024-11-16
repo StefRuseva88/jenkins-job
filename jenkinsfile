@@ -1,0 +1,41 @@
+pipeline {
+    agent any
+
+    ebvironment {
+        NODE_VERSION = '18.x'
+    }
+
+    tools {
+        nodejs "${NODE_VERSION}"
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                z 'npm install'
+            }
+        }
+
+        stage('Build') {
+            steps {
+                sh 'npm install'
+            }
+        }
+
+        stage('Start and Test') {
+            steps {
+                script {
+                    sh 'npm start &'
+                    sh 'wait-on http://localhost:8090'
+                    sh 'npm test'
+                }
+            }
+        }
+
+        post {
+            always {
+                echo 'CI pipeline finished'
+            }
+        }
+    }
+}
