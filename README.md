@@ -7,7 +7,7 @@
 
 ---
 ## Overview
-This repository contains a Node.js app. The project focuses on building a CI workflow using GitHub Actions to automate testing of a pre-existing Node.js application ("Student Registry").
+This repository contains a Node.js app. The project focuses on building a CI workflow using GitHub Actions and/or Jenkins to automate testing of a pre-existing Node.js application ("Student Registry").
 
 ## Project Goals:
 
