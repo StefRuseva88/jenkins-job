@@ -67,15 +67,14 @@ If using Jenkins for CI, follow these steps to integrate and run tests automatic
 Using Jenkins along with GitHub Actions allows more flexibility in customizing the CI pipeline, especially for larger or distributed testing scenarios.
 
 ## Additional Notes:
-
 - This project serves as a demonstration of CI/CD concepts using a pre-existing application.
 - The specific details of the "Student Registry" application are not covered in this repository.
-
-## Contributing
-Contributions are welcome! If you have any improvements or bug fixes, feel free to open a pull request.
 
 ## License
 This project is licensed under the [MIT License](LICENSE). See the [LICENSE](LICENSE) file for details.
 
 ## Contact
 For any questions or suggestions, please open an issue in the repository.
+
+---
+### Happy Testing! 🚀
